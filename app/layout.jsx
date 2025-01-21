@@ -8,11 +8,11 @@ export const metadata = {
     description: "Discover & Share AI Prompts"
 } 
 
-const RootLayout = ( {children} ) => {
+const RootLayout = ( {children, session} ) => {
   return (
     <html lang='en'>
         <body>
-            <Provider>
+            <Provider session={session}>
                 <div className='main'>
                     <div className="gradient" />
                 </div>
